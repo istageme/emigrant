@@ -579,8 +579,8 @@ a:hover {
   color: #dfd9c6;
 }
 /* Scroll to top button*/
-.scrollToTop_wraper {
-  opacity: 0 !important;
+#scrollToTop a {
+  border-radius: 100px;
 }
 /* Others*/
 .note-check a[data-value=Rubik] {
@@ -1950,6 +1950,89 @@ body {
 }
 .cid-qCYCiqHbBK .mbr-section-subtitle {
   letter-spacing: .2rem;
+}
+.cid-qCYU5kehQL {
+  background-image: url("../../../assets/images/c78bbf5f65d000019c6f1ef01bf0104e.jpg-mobile-750x327.jpg");
+}
+.cid-qCYU5kehQL .icons-media-container {
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  padding-top: 4rem;
+}
+.cid-qCYU5kehQL .icons-media-container .mbr-iconfont {
+  font-size: 96px;
+  color: #ffffff;
+}
+.cid-qCYU5kehQL .icons-media-container .icon-block {
+  padding-bottom: 1rem;
+}
+.cid-qCYU5kehQL .mbr-text {
+  color: #ffffff;
+}
+.cid-qCYU5kehQL .card {
+  padding-bottom: 1.5rem;
+}
+.cid-qCYMJm27ws {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #f9f9f9;
+}
+.cid-qCYMJm27ws h2 {
+  text-align: left;
+}
+.cid-qCYMJm27ws h4 {
+  text-align: left;
+  font-weight: 500;
+}
+.cid-qCYMJm27ws p {
+  color: #767676;
+  text-align: left;
+}
+.cid-qCYMJm27ws .block-content {
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  word-break: break-word;
+}
+.cid-qCYMJm27ws .media {
+  margin: initial;
+  align-items: center;
+}
+.cid-qCYMJm27ws .mbr-figure {
+  align-self: flex-start;
+  -webkit-align-self: flex-start;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+.cid-qCYMJm27ws .card-img {
+  padding-right: 2rem;
+  width: auto;
+}
+.cid-qCYMJm27ws .card-img span {
+  font-size: 72px;
+  color: #707070;
+}
+@media (min-width: 992px) {
+  .cid-qCYMJm27ws .mbr-figure {
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-qCYMJm27ws .mbr-figure {
+    padding-right: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 300px) {
+  .cid-qCYMJm27ws .card-img span {
+    font-size: 40px !important;
+  }
 }
 .cid-qCYxy5v0HA {
   padding-top: 45px;
