@@ -29,7 +29,7 @@
       }
     },
     "versionFirst": "4.3.4",
-    "uniqCompNum": 10,
+    "uniqCompNum": 11,
     "versionPublish": "4.5.2",
     "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png",
@@ -1134,6 +1134,61 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "color": "#767676",
+              "ul": {
+                "margin-bottom": "0",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "0px",
+                      "margin-top": "-10px",
+                      "padding-top": "3px",
+                      "content": "''",
+                      "display": "inline-block",
+                      "text-align": "center",
+                      "margin": "5px 10px",
+                      "line-height": "20px",
+                      "transition": "all .2s",
+                      "color": "contrast(@counterColor)",
+                      "background": "@counterColor",
+                      "width": "25px",
+                      "height": "25px",
+                      "border-radius": "50%",
+                      "& when (@countersType = 'circle')": {
+                        "background": "none",
+                        "border": "1px solid @counterColor",
+                        "color": "@counterColor"
+                      },
+                      "& when (@countersType = 'square')": {
+                        "border-radius": "0"
+                      },
+                      "& when (@mark)": {
+                        "content": "'✓'"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "_name": "content12",
+          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li><b><a href=\"http://www.gov.cn/zhengce/content/2017-07/04/content_5207926.htm\" target=\"_blank\">国务院办公厅关于加快发展商业养老保险的若干意见</a></b></li>\n                    <li><b><a href=\"http://www.gov.cn/zhengce/content/2017-03/06/content_5173930.htm\">国务院关于印发“十三五”国家老龄事业发展和养老体系建设规划的通知</a></b></li>\n                    <li><b><a href=\"http://www.gov.cn/zhengce/content/2017-05/24/content_5196268.htm\" target=\"_blank\">国务院办公厅关于县域创新驱动发展的若干意见</a></b></li><li><b><a href=\"http://www.gov.cn/zhengce/content/2017-02/17/content_5168733.htm\">国务院办公厅关于创新农村基础设施投融资体制机制的指导意见</a></b></li><li><b><a href=\"http://www.gov.cn/zhengce/content/2016-12/26/content_5152993.htm\" target=\"_blank\">国务院关于印发“十三五”旅游业发展规划的通知</a></b></li><li><b><a href=\"http://www.gov.cn/zhengce/content/2016-10/20/content_5122217.htm\" target=\"_blank\">国务院关于印发全国农业现代化规划(2016—2020年)的通知</a></b></li><li><b><a href=\"http://www.gov.cn/zhengce/content/2016-09/28/content_5112925.htm\" target=\"_blank\">国务院关于同意新增部分县(市、区、旗)纳入国家重点生态功能区的批复</a></b></li><li><b><a href=\"http://www.gov.cn/zhengce/content/2011-06/08/content_1441.htm\" target=\"_blank\">国务院关于印发全国主体功能区规划的通知</a></b></li><li><b><a href=\"http://www.gov.cn/zhengce/2017-03/09/content_5175763.htm\" target=\"_blank\">构建适应老龄化新形势的养老服务管理体制——专家解读《“十三五”国家老龄事业发展和养老体系建设规划》</a></b></li><li><b><a href=\"http://www.gov.cn/xinwen/2017-03/06/content_5174222.htm\" target=\"_blank\">图解：“十三五”国家老龄事业发展和养老体系</a></b><b style=\"font-size: 1rem;\"><a href=\"http://www.gov.cn/xinwen/2017-03/06/content_5174222.htm\" target=\"_blank\">建设规划的发展目标</a></b></li><li><b style=\"font-size: 1rem;\"><a href=\"http://www.gov.cn/xinwen/2016-10/12/content_5118067.htm\" target=\"_blank\">全国老龄办：老年宜居环境建设是“标配”不是“高配”</a></b></li><li><b style=\"font-size: 1rem;\"><a href=\"http://www.gov.cn/xinwen/2016-09/20/content_5109858.htm\" target=\"_blank\">住房城乡建设部：美丽宜居小镇村庄示范申报启动</a></b></li><li><b style=\"font-size: 1rem;\"><a href=\"http://www.gov.cn/xinwen/2016-02/24/content_5045747.htm\" target=\"_blank\">国内首部老龄蓝皮书提出，老年宜居环境建设迫在眉睫</a></b></li><li><b style=\"font-size: 1rem;\"><a href=\"http://www.gov.cn/xinwen/2015-12/04/content_5020128.htm\" target=\"_blank\">国家卫计委、民政部联合部署推进医养结合应对老龄化</a></b></li><li><b style=\"font-size: 1rem;\"><a href=\"http://www.gov.cn/zhengce/content/2015-11/20/content_10328.htm\" target=\"_blank\">国务院办公厅转发卫生计生委等部门关于推进</a></b><b style=\"font-size: 1rem;\"><a href=\"http://www.gov.cn/zhengce/content/2015-11/20/content_10328.htm\" target=\"_blank\">医疗卫生与养老服务相结合指导意见的通知</a></b></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qDz3seDrZD",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content12-a"
         },
         {
           "_styles": {
